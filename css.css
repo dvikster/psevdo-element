@@ -3,7 +3,7 @@
     width: 344px;
     position: relative;
 }
-.img_shadow{
+.imgs_bg{
     border: 7px solid white;
     -webkit-box-shadow: 0 2px 4px 4px rgba(0,0,0,0.55);
     -moz-box-shadow: 0 2px 4px 4px rgba(0,0,0,0.5);
@@ -23,4 +23,28 @@
     z-index: -1;
     left: -45px;
     top: -40px;
+}
+
+
+.img_block_shadow{
+    margin: 100px auto;
+    width: 560px;
+    position: relative;
+}
+.img_block_shadow img{
+    width: 100%;
+}
+.img_block_shadow::after {
+    content: url("img/shadow-right.png");
+    position: absolute;
+    z-index: -1;
+    right: -47px;
+    bottom: -51px;
+}
+.img_block_shadow::before{
+    content: url("img/shadow-left.png");
+    position: absolute;
+    z-index: -1;
+    left: -47px;
+    bottom: -51px;
 }
