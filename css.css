@@ -1,0 +1,26 @@
+.img_block{
+    margin: 100px auto;
+    width: 344px;
+    position: relative;
+}
+.img_shadow{
+    border: 7px solid white;
+    -webkit-box-shadow: 0 2px 4px 4px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0 2px 4px 4px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 4px 4px rgba(0,0,0,0.5);
+}
+
+.img_block::after {
+    content: url("img/right.png");
+    position: absolute;
+    z-index: -1;
+    right: -45px;
+    top: -44px;
+}
+.img_block::before{
+    content: url("img/left.png");
+    position: absolute;
+    z-index: -1;
+    left: -45px;
+    top: -40px;
+}
